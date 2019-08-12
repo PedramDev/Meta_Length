@@ -1,19 +1,19 @@
 # Meta_Length
-progressbar for meta with max and min with vanilla js
-Hi
-if you want change colors use css root variables
+# Hi
+progressbar for meta with max and min with vanilla js<br />
+if you want change colors use css root variables<br />
 # Defaults:
-:root{
-            --progressWrapperBg : hsl(0, 0%, 21%);
-            --progressWrapperHeight : 15px;
-            --progressRullerBgColor:hsl(348, 100%, 61%);
-            --progressRullerDanger:hsl(348, 100%, 61%);
-            --progressRullerWarning:hsl(48, 100%, 67%);
-            --progressRullerSuccess:hsl(141, 71%, 48%);
-            --progressFontSize:12px;
-            --progressTextAlign:center;
-            --progressTextColor:#000;
-        }
-       ----------------
+:root{<br />
+            --progressWrapperBg : hsl(0, 0%, 21%);<br />
+            --progressWrapperHeight : 15px;<br />
+            --progressRullerBgColor:hsl(348, 100%, 61%);<br />
+            --progressRullerDanger:hsl(348, 100%, 61%);<br />
+            --progressRullerWarning:hsl(48, 100%, 67%);<br />
+            --progressRullerSuccess:hsl(141, 71%, 48%);<br />
+            --progressFontSize:12px;<br />
+            --progressTextAlign:center;<br />
+            --progressTextColor:#000;<br />
+        }<br />
+       ----------------<br />
 # Usage:
      MetaLength('InputId',MinimumLengthAsInteger,MaximumLengthAsInteger);
