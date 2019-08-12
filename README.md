@@ -14,6 +14,5 @@ if you want change colors use css root variables<br />
             --progressTextAlign:center;<br />
             --progressTextColor:#000;<br />
         }<br />
-       ----------------<br />
 # Usage:
      MetaLength('InputId',MinimumLengthAsInteger,MaximumLengthAsInteger);
