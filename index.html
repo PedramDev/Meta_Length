@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meta Length</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root{
+            --progressWrapperBg : hsl(0, 0%, 21%);
+            --progressWrapperHeight : 15px;
+            --progressRullerBgColor:hsl(348, 100%, 61%);
+            --progressRullerDanger:hsl(348, 100%, 61%);
+            --progressRullerWarning:hsl(48, 100%, 67%);
+            --progressRullerSuccess:hsl(141, 71%, 48%);
+            --progressFontSize:12px;
+            --progressTextAlign:center;
+            --progressTextColor:#000;
+        }
+        .progressWrapper{
+            position: relative;
+            background-color: var(--progressWrapperBg);
+            height: var(--progressWrapperHeight);
+        }
+        .progressWrapper span{
+            position: absolute;
+            height: var(--progressWrapperHeight);
+            background-color: var(--progressRullerBgColor);
+            font-size: var(--progressFontSize);
+            text-align: var(--progressTextAlign);
+            color: var(--progressTextColor);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-control">
+        <input type="text" style="width: 200px;" id="myinput" value="12">
+    </div>
+    <script src="meta_length.js"></script>
+    <script>
+       MetaLength('myinput',5,10);
+    </script>
+</body>
+</html>
