@@ -15,7 +15,6 @@ if you want change colors use css root variables<br />
             --progressTextColor:#000;<br />
         }<br />
 # Usage:
-     Template : <br />
+     Template :
      MetaLength('InputId',MinimumLengthAsInteger,MaximumLengthAsInteger);
-     <br />
      MetaLength('InputId',5,20);
