@@ -1,3 +1,8 @@
+// Meta Length Progressbar
+// Version: 1.0
+// Author: Pedram Karimi
+// Publish: 2019-08-12
+// Latest Version URL: https://github.com/noonegandom/Meta_Length
 function MetaLength(InputId, Min, Max) {
     var InputHandler = document.getElementById(InputId);
     var new_node = document.createElement("div");
