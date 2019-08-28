@@ -9,7 +9,7 @@ function MetaLength(InputId, Min, Max) {
     new_node.value = InputHandler.value.length;
     new_node.id = InputId+'-progressWrapper';
     new_node.classList.add('progressWrapper');
-    new_node.style.width = document.getElementById('myinput').offsetWidth + 'px';
+    new_node.style.width = InputHandler.offsetWidth + 'px';
 
     var innerSpan = document.createElement('span');
     new_node.append(innerSpan);
