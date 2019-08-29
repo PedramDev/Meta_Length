@@ -1,5 +1,5 @@
 // Meta Length Progressbar
-// Version: 1.0
+// Version: 1.2
 // Author: Pedram Karimi
 // Publish: 2019-08-12
 // Latest Version URL: https://github.com/noonegandom/Meta_Length
@@ -35,6 +35,9 @@ function MetaLength(InputId, Min, Max) {
         if (Min <= x && x <= Max) {
             innerSpan.style.width = filled_percent+'%';        
             innerSpan.style.backgroundColor = 'var(--progressRullerSuccess)';
+        }
+        if (x > Max) {
+            innerSpan.style.width = '100%';
         }
         innerSpan.innerText=filled_percent+'%';
     }
