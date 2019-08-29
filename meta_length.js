@@ -17,21 +17,24 @@ function MetaLength(InputId, Min, Max) {
     InputHandler.parentNode.insertBefore(new_node, InputHandler.nextSibling);
     InputHandler.addEventListener('keyup',CheckLength);
     CheckLength();
+    window.addEventListener('resize', function (e) {
+        new_node.style.width = InputHandler.offsetWidth + 'px';
+    });
     function CheckLength() {
         var x = InputHandler.value.length;
-        var filled_percent = (100 / Max) * x;
+        var filled_percent = Math.ceil((100 / Max) * x);
         var node_width = new_node.style.width.substring(0,new_node.style.width.length-2);//remove 'px'
         
         if (Min > x) {
-            document.documentElement.style.setProperty('--progressRullerBgColor', 'var(--progressRullerWarning)');
+            innerSpan.style.backgroundColor = 'var(--progressRullerWarning)';
             innerSpan.style.width = filled_percent+'%';        
         }
         if (Max < x) {
-            document.documentElement.style.setProperty('--progressRullerBgColor', 'var(--progressRullerDanger)');
+            innerSpan.style.backgroundColor = 'var(--progressRullerDanger)';
         }
         if (Min <= x && x <= Max) {
             innerSpan.style.width = filled_percent+'%';        
-            document.documentElement.style.setProperty('--progressRullerBgColor', 'var(--progressRullerSuccess)');
+            innerSpan.style.backgroundColor = 'var(--progressRullerSuccess)';
         }
         innerSpan.innerText=filled_percent+'%';
     }
